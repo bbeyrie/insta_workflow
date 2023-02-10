@@ -2,4 +2,4 @@ instagrapi
 pandas
 jupyterlab
 nbclient
-PIL
+Pillow
