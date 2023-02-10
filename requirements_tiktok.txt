@@ -1,6 +1,4 @@
-instagrapi
 pandas
 jupyterlab
 nbclient
-Pillow
 tiktokapipy

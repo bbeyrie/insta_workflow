@@ -1,0 +1,5 @@
+instagrapi
+pandas
+jupyterlab
+nbclient
+Pillow
