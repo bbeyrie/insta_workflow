@@ -31,7 +31,7 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements_tiktok.txt
 
-      - id: python 
+      - id: python-runner 
         name: Python Execution
         run: python tiktok_pipeline.py
         shell: bash 
