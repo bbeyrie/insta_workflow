@@ -33,7 +33,7 @@ jobs:
 
       - id: python-runner 
         name: Python Execution
-        run: python tiktok_pipeline.py
+        run: playwright install && playwright install-deps && python tiktok_pipeline.py
         shell: bash 
 
  # Add new files in folder, commit along with other modified files, push
