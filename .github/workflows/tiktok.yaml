@@ -31,9 +31,9 @@ jobs:
           cache: 'pip'
       - run: pip install -r requirements_tiktok.txt
 
-      - id: jupyter 
-        name: Jupyter Notebook Execution
-        run: jupyter execute tiktok_pipeline.ipynb
+      - id: python 
+        name: Python Execution
+        run: python tiktok_pipeline.py
         shell: bash 
 
  # Add new files in folder, commit along with other modified files, push

@@ -1,4 +1,3 @@
 pandas
-jupyterlab
 nbclient
 tiktokapipy
