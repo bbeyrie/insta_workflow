@@ -18,15 +18,15 @@ except:
      'Post Comment Count', 'Post Share Count','Post Comments','Post Hastag',
      'Post Labels','Post Image','Post Music'])
 print("Tags: ", challengenames)
-with TikTokAPI(scroll_down_time=150,
+with TikTokAPI(scroll_down_time=60,
                emulate_mobile=False,
                navigation_retries=2,
                navigation_timeout=10,
                headless=True) as api:
     for challengename in challengenames:
-        api.default_scroll_down_time = 150
+        api.default_scroll_down_time = 60
         print("Processing Tag: ", challengename)
-        challenges = api.challenge(challengename)
+        challenges = api.challenge(challengename, video_limit=150)
         challenge_id = 'ID' + str(challenges.id)
         challenge_view_count = challenges.stats.view_count
         challenge_description = challenges.desc
